@@ -29,8 +29,8 @@ class JacksonFooTest {
     private fun serialize() = Stream.of(
         Arguments.of({ objectMapper.writeValueAsString(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
         Arguments.of({ objectMapper.writeValueAsString(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ objectMapper.writeValueAsString(defaultValueFoo) }, """{"fizz":"FUZZ"}"""),
-        Arguments.of({ objectMapper.writeValueAsString(valueClassFoo) }, """{"bizz":5}"""),
+        Arguments.of({ objectMapper.writeValueAsString(defaultValueFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
+        Arguments.of({ objectMapper.writeValueAsString(valueClassFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
     )
 
     private fun deserialize() = Stream.of(
