@@ -20,7 +20,7 @@ import org.openjdk.jmh.annotations.Scope
 import org.openjdk.jmh.annotations.State
 
 @State(Scope.Benchmark)
-class SerializationComparison {
+open class SerializationComparison {
     private val jsonb = JsonbBuilder.create(
         JsonbConfig().withPropertyOrderStrategy(PropertyOrderStrategy.ANY)
     )

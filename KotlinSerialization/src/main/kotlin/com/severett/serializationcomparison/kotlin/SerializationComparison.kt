@@ -20,7 +20,7 @@ import org.openjdk.jmh.annotations.Scope
 import org.openjdk.jmh.annotations.State
 
 @State(Scope.Benchmark)
-class SerializationComparison {
+open class SerializationComparison {
     @Benchmark
     fun serializePojoFoo(): String = Json.encodeToString(pojoFoo)
 
