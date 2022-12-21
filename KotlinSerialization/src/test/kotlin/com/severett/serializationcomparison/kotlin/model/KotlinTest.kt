@@ -14,9 +14,9 @@ import java.util.stream.*
 class KotlinTest {
     @ParameterizedTest
     @MethodSource
-    fun serialize(outputCallback: () -> String, expectedOutput: String) {
+    fun serialize(outputCallback: () -> String) {
         val givenOutput = outputCallback.invoke()
-        Assertions.assertEquals(expectedOutput, givenOutput)
+        Assertions.assertEquals("""{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}""", givenOutput)
     }
 
     @ParameterizedTest
@@ -27,10 +27,10 @@ class KotlinTest {
     }
 
     private fun serialize() = Stream.of(
-        Arguments.of({ Json.encodeToString(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ Json.encodeToString(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ Json.encodeToString(defaultValueFoo) }, """{"fizz":"FUZZ"}"""),
-        Arguments.of({ Json.encodeToString(valueClassFoo) }, """{"bizz":5}"""),
+        { Json.encodeToString(pojoFoo) },
+        { Json.encodeToString(immutableFoo) },
+        { Json.encodeToString(defaultValueFoo) },
+        { Json.encodeToString(valueClassFoo) },
     )
 
     private fun deserialize() = Stream.of(
