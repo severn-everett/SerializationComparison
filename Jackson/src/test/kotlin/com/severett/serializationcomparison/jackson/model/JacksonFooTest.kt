@@ -14,9 +14,9 @@ class JacksonFooTest {
 
     @ParameterizedTest
     @MethodSource
-    fun serialize(outputCallback: () -> String, expectedOutput: String) {
+    fun serialize(outputCallback: () -> String) {
         val givenOutput = outputCallback.invoke()
-        Assertions.assertEquals(expectedOutput, givenOutput)
+        Assertions.assertEquals("""{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}""", givenOutput)
     }
 
     @ParameterizedTest
@@ -27,10 +27,10 @@ class JacksonFooTest {
     }
 
     private fun serialize() = Stream.of(
-        Arguments.of({ objectMapper.writeValueAsString(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ objectMapper.writeValueAsString(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ objectMapper.writeValueAsString(defaultValueFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ objectMapper.writeValueAsString(valueClassFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
+        { objectMapper.writeValueAsString(pojoFoo) },
+        { objectMapper.writeValueAsString(immutableFoo) },
+        { objectMapper.writeValueAsString(defaultValueFoo) },
+        { objectMapper.writeValueAsString(valueClassFoo) },
     )
 
     private fun deserialize() = Stream.of(

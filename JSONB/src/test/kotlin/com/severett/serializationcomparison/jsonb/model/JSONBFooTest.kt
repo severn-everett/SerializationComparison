@@ -18,9 +18,9 @@ class JSONBFooTest {
 
     @ParameterizedTest
     @MethodSource
-    fun serialize(outputCallback: () -> String, expectedOutput: String) {
+    fun serialize(outputCallback: () -> String) {
         val givenOutput = outputCallback.invoke()
-        Assertions.assertEquals(expectedOutput, givenOutput)
+        Assertions.assertEquals("""{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}""", givenOutput)
     }
 
     @ParameterizedTest
@@ -31,10 +31,10 @@ class JSONBFooTest {
     }
 
     private fun serialize() = Stream.of(
-        Arguments.of({ jsonb.toJson(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ jsonb.toJson(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ jsonb.toJson(defaultValueFoo) }, """{"fizz":"FUZZ"}"""),
-        Arguments.of({ jsonb.toJson(valueClassFoo) }, """{"bizz":5}"""),
+        { jsonb.toJson(pojoFoo) },
+        { jsonb.toJson(immutableFoo) },
+        { jsonb.toJson(defaultValueFoo) },
+        { jsonb.toJson(valueClassFoo) },
     )
 
     private fun deserialize() = Stream.of(

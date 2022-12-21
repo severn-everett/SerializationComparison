@@ -14,9 +14,9 @@ class GSONFooTest {
 
     @ParameterizedTest
     @MethodSource
-    fun serialize(outputCallback: () -> String, expectedOutput: String) {
+    fun serialize(outputCallback: () -> String) {
         val givenOutput = outputCallback.invoke()
-        assertEquals(expectedOutput, givenOutput)
+        assertEquals("""{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}""", givenOutput)
     }
 
     @ParameterizedTest
@@ -27,10 +27,10 @@ class GSONFooTest {
     }
 
     private fun serialize() = Stream.of(
-        Arguments.of({ gson.toJson(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ gson.toJson(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ gson.toJson(defaultValueFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ gson.toJson(valueClassFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
+        { gson.toJson(pojoFoo) },
+        { gson.toJson(immutableFoo) },
+        { gson.toJson(defaultValueFoo) },
+        { gson.toJson(valueClassFoo) },
     )
 
     private fun deserialize() = Stream.of(
