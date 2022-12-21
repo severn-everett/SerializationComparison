@@ -6,18 +6,20 @@ data class PojoFoo(var fizz: String, var bizz: Int, var bazz: List<String>) {
 
 data class ImmutableFoo(val fizz: String, val bizz: Int, val bazz: List<String>)
 
-data class DefaultValueFoo(val fizz: String = "FUZZ")
+data class DefaultValueFoo(var fizz: String = "FUZZ", var bizz: Int, var bazz: List<String>) {
+    constructor() : this(bizz = 0, bazz = emptyList())
+}
 
-data class ValueClassFoo(var bizz: UInt) {
-    constructor() : this(0u)
+data class ValueClassFoo(var fizz: String, var bizz: UInt, var bazz: List<String>) {
+    constructor() : this("", 0u, emptyList())
 }
 
 val pojoFoo = PojoFoo(fizz = "FUZZ", bizz = 5, bazz = listOf("BUZZ", "BOZZ"))
 val immutableFoo = ImmutableFoo(fizz = "FUZZ", bizz = 5, bazz = listOf("BUZZ", "BOZZ"))
-val defaultValueFoo = DefaultValueFoo()
-val valueClassFoo = ValueClassFoo(bizz = 5u)
+val defaultValueFoo = DefaultValueFoo(bizz = 5, bazz = listOf("BUZZ", "BOZZ"))
+val valueClassFoo = ValueClassFoo(fizz = "FUZZ", bizz = 5u, bazz = listOf("BUZZ", "BOZZ"))
 
 const val pojoFooStr = """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""
 const val immutableFooStr = """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""
-const val defaultValueFooStr = """{}"""
-const val valueClassFooStr = """{"bizz":5}"""
+const val defaultValueFooStr = """{"bizz":5,"bazz":["BUZZ","BOZZ"]}"""
+const val valueClassFooStr = """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""

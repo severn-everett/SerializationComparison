@@ -29,8 +29,8 @@ class GSONFooTest {
     private fun serialize() = Stream.of(
         Arguments.of({ gson.toJson(pojoFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
         Arguments.of({ gson.toJson(immutableFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
-        Arguments.of({ gson.toJson(defaultValueFoo) }, """{"fizz":"FUZZ"}"""),
-        Arguments.of({ gson.toJson(valueClassFoo) }, """{"bizz":5}"""),
+        Arguments.of({ gson.toJson(defaultValueFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
+        Arguments.of({ gson.toJson(valueClassFoo) }, """{"fizz":"FUZZ","bizz":5,"bazz":["BUZZ","BOZZ"]}"""),
     )
 
     private fun deserialize() = Stream.of(
