@@ -1,0 +1,681 @@
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeDefaultValueFoo
+
+# Run progress: 0.00% complete, ETA 01:06:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 3371327.115 ops/s
+# Warmup Iteration   2: 3608067.776 ops/s
+# Warmup Iteration   3: 3721705.149 ops/s
+# Warmup Iteration   4: 3724520.889 ops/s
+# Warmup Iteration   5: 3722596.914 ops/s
+Iteration   1: 3732847.931 ops/s
+Iteration   2: 3735473.794 ops/s
+Iteration   3: 3716438.801 ops/s
+Iteration   4: 3734537.797 ops/s
+Iteration   5: 3742159.471 ops/s
+
+# Run progress: 2.50% complete, ETA 01:05:11
+# Fork: 2 of 5
+# Warmup Iteration   1: 3679280.018 ops/s
+# Warmup Iteration   2: 3784790.866 ops/s
+# Warmup Iteration   3: 3798539.316 ops/s
+# Warmup Iteration   4: 3774798.916 ops/s
+# Warmup Iteration   5: 3775305.571 ops/s
+Iteration   1: 3764348.342 ops/s
+Iteration   2: 3782838.322 ops/s
+Iteration   3: 3788499.274 ops/s
+Iteration   4: 3787336.460 ops/s
+Iteration   5: 3770262.729 ops/s
+
+# Run progress: 5.00% complete, ETA 01:03:30
+# Fork: 3 of 5
+# Warmup Iteration   1: 3670758.171 ops/s
+# Warmup Iteration   2: 3758890.823 ops/s
+# Warmup Iteration   3: 3763327.101 ops/s
+# Warmup Iteration   4: 3758002.265 ops/s
+# Warmup Iteration   5: 3786871.248 ops/s
+Iteration   1: 3763124.267 ops/s
+Iteration   2: 3782298.660 ops/s
+Iteration   3: 3766736.385 ops/s
+Iteration   4: 3761557.525 ops/s
+Iteration   5: 3773079.508 ops/s
+
+# Run progress: 7.50% complete, ETA 01:01:50
+# Fork: 4 of 5
+# Warmup Iteration   1: 3588192.125 ops/s
+# Warmup Iteration   2: 3664025.297 ops/s
+# Warmup Iteration   3: 3709988.733 ops/s
+# Warmup Iteration   4: 3668522.780 ops/s
+# Warmup Iteration   5: 3690314.399 ops/s
+Iteration   1: 3693161.541 ops/s
+Iteration   2: 3708202.517 ops/s
+Iteration   3: 3677927.884 ops/s
+Iteration   4: 3713118.911 ops/s
+Iteration   5: 3701661.912 ops/s
+
+# Run progress: 10.00% complete, ETA 01:00:09
+# Fork: 5 of 5
+# Warmup Iteration   1: 3573014.948 ops/s
+# Warmup Iteration   2: 3690361.166 ops/s
+# Warmup Iteration   3: 3720716.058 ops/s
+# Warmup Iteration   4: 3690582.944 ops/s
+# Warmup Iteration   5: 3714313.896 ops/s
+Iteration   1: 3715855.386 ops/s
+Iteration   2: 3714562.374 ops/s
+Iteration   3: 3678552.318 ops/s
+Iteration   4: 3716661.410 ops/s
+Iteration   5: 3693326.922 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeDefaultValueFoo":
+  3736582.817 ±(99.9%) 26432.259 ops/s [Average]
+  (min, avg, max) = (3677927.884, 3736582.817, 3788499.274), stdev = 35286.310
+  CI (99.9%): [3710150.558, 3763015.077] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeImmutableFoo
+
+# Run progress: 12.50% complete, ETA 00:58:29
+# Fork: 1 of 5
+# Warmup Iteration   1: 3008126.500 ops/s
+# Warmup Iteration   2: 3099288.630 ops/s
+# Warmup Iteration   3: 3089961.796 ops/s
+# Warmup Iteration   4: 3095112.815 ops/s
+# Warmup Iteration   5: 3094891.649 ops/s
+Iteration   1: 3082516.964 ops/s
+Iteration   2: 3099128.178 ops/s
+Iteration   3: 3088278.995 ops/s
+Iteration   4: 3078826.463 ops/s
+Iteration   5: 3097667.011 ops/s
+
+# Run progress: 15.00% complete, ETA 00:56:49
+# Fork: 2 of 5
+# Warmup Iteration   1: 3044028.431 ops/s
+# Warmup Iteration   2: 3097572.497 ops/s
+# Warmup Iteration   3: 3129757.326 ops/s
+# Warmup Iteration   4: 3137769.342 ops/s
+# Warmup Iteration   5: 3120016.187 ops/s
+Iteration   1: 3130954.033 ops/s
+Iteration   2: 3137018.904 ops/s
+Iteration   3: 3104699.490 ops/s
+Iteration   4: 3142716.516 ops/s
+Iteration   5: 3131665.536 ops/s
+
+# Run progress: 17.50% complete, ETA 00:55:09
+# Fork: 3 of 5
+# Warmup Iteration   1: 2951184.543 ops/s
+# Warmup Iteration   2: 3038546.297 ops/s
+# Warmup Iteration   3: 3051704.640 ops/s
+# Warmup Iteration   4: 3035086.298 ops/s
+# Warmup Iteration   5: 3051721.033 ops/s
+Iteration   1: 3050352.711 ops/s
+Iteration   2: 3040748.976 ops/s
+Iteration   3: 3046279.411 ops/s
+Iteration   4: 2987763.313 ops/s
+Iteration   5: 2936512.691 ops/s
+
+# Run progress: 20.00% complete, ETA 00:53:28
+# Fork: 4 of 5
+# Warmup Iteration   1: 2834128.080 ops/s
+# Warmup Iteration   2: 3051112.301 ops/s
+# Warmup Iteration   3: 3028855.048 ops/s
+# Warmup Iteration   4: 3057430.182 ops/s
+# Warmup Iteration   5: 3062209.936 ops/s
+Iteration   1: 3027090.569 ops/s
+Iteration   2: 3061511.481 ops/s
+Iteration   3: 3056351.764 ops/s
+Iteration   4: 3041544.373 ops/s
+Iteration   5: 3061417.223 ops/s
+
+# Run progress: 22.50% complete, ETA 00:51:48
+# Fork: 5 of 5
+# Warmup Iteration   1: 2995970.897 ops/s
+# Warmup Iteration   2: 3059252.025 ops/s
+# Warmup Iteration   3: 3091712.817 ops/s
+# Warmup Iteration   4: 3089632.335 ops/s
+# Warmup Iteration   5: 3052555.844 ops/s
+Iteration   1: 3095834.950 ops/s
+Iteration   2: 3090436.419 ops/s
+Iteration   3: 3067337.947 ops/s
+Iteration   4: 3083490.242 ops/s
+Iteration   5: 3090574.860 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeImmutableFoo":
+  3073228.761 ±(99.9%) 34696.279 ops/s [Average]
+  (min, avg, max) = (2936512.691, 3073228.761, 3142716.516), stdev = 46318.540
+  CI (99.9%): [3038532.482, 3107925.040] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.deserializePojoFoo
+
+# Run progress: 25.00% complete, ETA 00:50:08
+# Fork: 1 of 5
+# Warmup Iteration   1: 3038955.825 ops/s
+# Warmup Iteration   2: 3140665.869 ops/s
+# Warmup Iteration   3: 3143749.277 ops/s
+# Warmup Iteration   4: 3117254.652 ops/s
+# Warmup Iteration   5: 3144747.132 ops/s
+Iteration   1: 3150314.843 ops/s
+Iteration   2: 3138607.724 ops/s
+Iteration   3: 3150725.677 ops/s
+Iteration   4: 3082290.496 ops/s
+Iteration   5: 3094382.248 ops/s
+
+# Run progress: 27.50% complete, ETA 00:48:27
+# Fork: 2 of 5
+# Warmup Iteration   1: 2975554.983 ops/s
+# Warmup Iteration   2: 3090026.445 ops/s
+# Warmup Iteration   3: 3108638.992 ops/s
+# Warmup Iteration   4: 3117894.685 ops/s
+# Warmup Iteration   5: 3092085.421 ops/s
+Iteration   1: 3109474.543 ops/s
+Iteration   2: 3108168.905 ops/s
+Iteration   3: 3096834.921 ops/s
+Iteration   4: 3101273.179 ops/s
+Iteration   5: 3096778.321 ops/s
+
+# Run progress: 30.00% complete, ETA 00:46:47
+# Fork: 3 of 5
+# Warmup Iteration   1: 2935092.223 ops/s
+# Warmup Iteration   2: 3012620.638 ops/s
+# Warmup Iteration   3: 3054366.308 ops/s
+# Warmup Iteration   4: 3051831.170 ops/s
+# Warmup Iteration   5: 3044878.557 ops/s
+Iteration   1: 3049151.356 ops/s
+Iteration   2: 3046676.569 ops/s
+Iteration   3: 3041422.958 ops/s
+Iteration   4: 3057267.070 ops/s
+Iteration   5: 3045707.570 ops/s
+
+# Run progress: 32.50% complete, ETA 00:45:07
+# Fork: 4 of 5
+# Warmup Iteration   1: 3029160.562 ops/s
+# Warmup Iteration   2: 3126310.303 ops/s
+# Warmup Iteration   3: 3132573.375 ops/s
+# Warmup Iteration   4: 3119067.486 ops/s
+# Warmup Iteration   5: 3134299.637 ops/s
+Iteration   1: 3142296.302 ops/s
+Iteration   2: 3125416.343 ops/s
+Iteration   3: 3140964.069 ops/s
+Iteration   4: 3126468.656 ops/s
+Iteration   5: 3125213.898 ops/s
+
+# Run progress: 35.00% complete, ETA 00:43:26
+# Fork: 5 of 5
+# Warmup Iteration   1: 2954086.441 ops/s
+# Warmup Iteration   2: 3044780.876 ops/s
+# Warmup Iteration   3: 3024108.548 ops/s
+# Warmup Iteration   4: 3034274.812 ops/s
+# Warmup Iteration   5: 3045976.541 ops/s
+Iteration   1: 3036824.324 ops/s
+Iteration   2: 3045840.303 ops/s
+Iteration   3: 3034879.931 ops/s
+Iteration   4: 3025978.893 ops/s
+Iteration   5: 3050164.605 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.deserializePojoFoo":
+  3088924.948 ±(99.9%) 31434.449 ops/s [Average]
+  (min, avg, max) = (3025978.893, 3088924.948, 3150725.677), stdev = 41964.090
+  CI (99.9%): [3057490.499, 3120359.397] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeValueClassFoo
+
+# Run progress: 37.50% complete, ETA 00:41:46
+# Fork: 1 of 5
+# Warmup Iteration   1: 2882100.962 ops/s
+# Warmup Iteration   2: 2972364.658 ops/s
+# Warmup Iteration   3: 2996126.819 ops/s
+# Warmup Iteration   4: 2972199.564 ops/s
+# Warmup Iteration   5: 2977212.526 ops/s
+Iteration   1: 2988644.954 ops/s
+Iteration   2: 2984213.245 ops/s
+Iteration   3: 2979595.716 ops/s
+Iteration   4: 3000906.269 ops/s
+Iteration   5: 2990214.230 ops/s
+
+# Run progress: 40.00% complete, ETA 00:40:06
+# Fork: 2 of 5
+# Warmup Iteration   1: 2870307.502 ops/s
+# Warmup Iteration   2: 2972168.333 ops/s
+# Warmup Iteration   3: 2971481.985 ops/s
+# Warmup Iteration   4: 2960812.425 ops/s
+# Warmup Iteration   5: 2968838.882 ops/s
+Iteration   1: 2970040.087 ops/s
+Iteration   2: 2960741.815 ops/s
+Iteration   3: 2969194.759 ops/s
+Iteration   4: 2968188.642 ops/s
+Iteration   5: 2960472.337 ops/s
+
+# Run progress: 42.50% complete, ETA 00:38:26
+# Fork: 3 of 5
+# Warmup Iteration   1: 2895036.806 ops/s
+# Warmup Iteration   2: 2969560.659 ops/s
+# Warmup Iteration   3: 2980353.967 ops/s
+# Warmup Iteration   4: 2994748.051 ops/s
+# Warmup Iteration   5: 2986198.541 ops/s
+Iteration   1: 2981936.902 ops/s
+Iteration   2: 2977490.827 ops/s
+Iteration   3: 2881913.481 ops/s
+Iteration   4: 2896537.954 ops/s
+Iteration   5: 2972984.991 ops/s
+
+# Run progress: 45.00% complete, ETA 00:36:45
+# Fork: 4 of 5
+# Warmup Iteration   1: 2971099.876 ops/s
+# Warmup Iteration   2: 2878371.275 ops/s
+# Warmup Iteration   3: 2883198.066 ops/s
+# Warmup Iteration   4: 2885845.022 ops/s
+# Warmup Iteration   5: 2872136.641 ops/s
+Iteration   1: 2879324.612 ops/s
+Iteration   2: 2872844.407 ops/s
+Iteration   3: 2867511.468 ops/s
+Iteration   4: 2879213.069 ops/s
+Iteration   5: 2885800.070 ops/s
+
+# Run progress: 47.50% complete, ETA 00:35:05
+# Fork: 5 of 5
+# Warmup Iteration   1: 2782168.771 ops/s
+# Warmup Iteration   2: 2885926.023 ops/s
+# Warmup Iteration   3: 2891608.159 ops/s
+# Warmup Iteration   4: 2886984.265 ops/s
+# Warmup Iteration   5: 2893443.731 ops/s
+Iteration   1: 2890736.237 ops/s
+Iteration   2: 2885594.368 ops/s
+Iteration   3: 2883241.312 ops/s
+Iteration   4: 2889212.178 ops/s
+Iteration   5: 2881598.450 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.deserializeValueClassFoo":
+  2931926.095 ±(99.9%) 36850.322 ops/s [Average]
+  (min, avg, max) = (2867511.468, 2931926.095, 3000906.269), stdev = 49194.125
+  CI (99.9%): [2895075.774, 2968776.417] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.serializeDefaultValueFoo
+
+# Run progress: 50.00% complete, ETA 00:33:25
+# Fork: 1 of 5
+# Warmup Iteration   1: 5252593.392 ops/s
+# Warmup Iteration   2: 5341580.186 ops/s
+# Warmup Iteration   3: 5363238.792 ops/s
+# Warmup Iteration   4: 5383297.225 ops/s
+# Warmup Iteration   5: 5375777.643 ops/s
+Iteration   1: 5331782.386 ops/s
+Iteration   2: 5381589.931 ops/s
+Iteration   3: 5363706.806 ops/s
+Iteration   4: 5354299.235 ops/s
+Iteration   5: 5347966.155 ops/s
+
+# Run progress: 52.50% complete, ETA 00:31:45
+# Fork: 2 of 5
+# Warmup Iteration   1: 5200841.128 ops/s
+# Warmup Iteration   2: 5223630.747 ops/s
+# Warmup Iteration   3: 5334088.227 ops/s
+# Warmup Iteration   4: 5297161.167 ops/s
+# Warmup Iteration   5: 5310473.603 ops/s
+Iteration   1: 5331467.161 ops/s
+Iteration   2: 5328988.308 ops/s
+Iteration   3: 5317942.966 ops/s
+Iteration   4: 5329674.249 ops/s
+Iteration   5: 5302800.794 ops/s
+
+# Run progress: 55.00% complete, ETA 00:30:04
+# Fork: 3 of 5
+# Warmup Iteration   1: 5224275.792 ops/s
+# Warmup Iteration   2: 5391354.205 ops/s
+# Warmup Iteration   3: 5388784.833 ops/s
+# Warmup Iteration   4: 5366814.103 ops/s
+# Warmup Iteration   5: 5369418.150 ops/s
+Iteration   1: 5392164.500 ops/s
+Iteration   2: 5392517.179 ops/s
+Iteration   3: 5409084.768 ops/s
+Iteration   4: 5387654.875 ops/s
+Iteration   5: 5379834.890 ops/s
+
+# Run progress: 57.50% complete, ETA 00:28:24
+# Fork: 4 of 5
+# Warmup Iteration   1: 5640052.692 ops/s
+# Warmup Iteration   2: 5752741.418 ops/s
+# Warmup Iteration   3: 5769011.797 ops/s
+# Warmup Iteration   4: 5770760.471 ops/s
+# Warmup Iteration   5: 5781373.016 ops/s
+Iteration   1: 5702278.011 ops/s
+Iteration   2: 5676693.420 ops/s
+Iteration   3: 5738481.088 ops/s
+Iteration   4: 5761694.788 ops/s
+Iteration   5: 5779388.421 ops/s
+
+# Run progress: 60.00% complete, ETA 00:26:44
+# Fork: 5 of 5
+# Warmup Iteration   1: 5171188.001 ops/s
+# Warmup Iteration   2: 5373180.561 ops/s
+# Warmup Iteration   3: 5313991.241 ops/s
+# Warmup Iteration   4: 5305249.789 ops/s
+# Warmup Iteration   5: 5293151.891 ops/s
+Iteration   1: 5317544.692 ops/s
+Iteration   2: 5263411.488 ops/s
+Iteration   3: 5299597.816 ops/s
+Iteration   4: 5279989.420 ops/s
+Iteration   5: 5298468.510 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.serializeDefaultValueFoo":
+  5418760.874 ±(99.9%) 123412.464 ops/s [Average]
+  (min, avg, max) = (5263411.488, 5418760.874, 5779388.421), stdev = 164752.109
+  CI (99.9%): [5295348.410, 5542173.338] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.serializeImmutableFoo
+
+# Run progress: 62.50% complete, ETA 00:25:04
+# Fork: 1 of 5
+# Warmup Iteration   1: 5762105.261 ops/s
+# Warmup Iteration   2: 5948143.689 ops/s
+# Warmup Iteration   3: 5924586.493 ops/s
+# Warmup Iteration   4: 5928591.468 ops/s
+# Warmup Iteration   5: 5953303.244 ops/s
+Iteration   1: 5909215.314 ops/s
+Iteration   2: 5940497.495 ops/s
+Iteration   3: 5945080.854 ops/s
+Iteration   4: 5899907.008 ops/s
+Iteration   5: 5934409.283 ops/s
+
+# Run progress: 65.00% complete, ETA 00:23:23
+# Fork: 2 of 5
+# Warmup Iteration   1: 5622095.698 ops/s
+# Warmup Iteration   2: 5639458.759 ops/s
+# Warmup Iteration   3: 5736691.840 ops/s
+# Warmup Iteration   4: 5737887.814 ops/s
+# Warmup Iteration   5: 5725474.256 ops/s
+Iteration   1: 5733735.850 ops/s
+Iteration   2: 5739415.301 ops/s
+Iteration   3: 5699140.809 ops/s
+Iteration   4: 5713857.248 ops/s
+Iteration   5: 5712299.296 ops/s
+
+# Run progress: 67.50% complete, ETA 00:21:43
+# Fork: 3 of 5
+# Warmup Iteration   1: 5164114.719 ops/s
+# Warmup Iteration   2: 5267077.673 ops/s
+# Warmup Iteration   3: 5306182.522 ops/s
+# Warmup Iteration   4: 5278592.501 ops/s
+# Warmup Iteration   5: 5233026.809 ops/s
+Iteration   1: 5197527.397 ops/s
+Iteration   2: 5137288.289 ops/s
+Iteration   3: 5237306.382 ops/s
+Iteration   4: 5272955.131 ops/s
+Iteration   5: 5260150.270 ops/s
+
+# Run progress: 70.00% complete, ETA 00:20:03
+# Fork: 4 of 5
+# Warmup Iteration   1: 5074313.375 ops/s
+# Warmup Iteration   2: 5207025.561 ops/s
+# Warmup Iteration   3: 5024924.986 ops/s
+# Warmup Iteration   4: 5208724.417 ops/s
+# Warmup Iteration   5: 5225730.659 ops/s
+Iteration   1: 5230174.728 ops/s
+Iteration   2: 5244209.317 ops/s
+Iteration   3: 5251795.473 ops/s
+Iteration   4: 5211539.625 ops/s
+Iteration   5: 5234507.234 ops/s
+
+# Run progress: 72.50% complete, ETA 00:18:22
+# Fork: 5 of 5
+# Warmup Iteration   1: 5204670.806 ops/s
+# Warmup Iteration   2: 5320389.540 ops/s
+# Warmup Iteration   3: 5333972.879 ops/s
+# Warmup Iteration   4: 5315308.917 ops/s
+# Warmup Iteration   5: 5320036.927 ops/s
+Iteration   1: 5334599.933 ops/s
+Iteration   2: 5320312.317 ops/s
+Iteration   3: 5297663.679 ops/s
+Iteration   4: 5330590.400 ops/s
+Iteration   5: 5323483.694 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.serializeImmutableFoo":
+  5484466.493 ±(99.9%) 219445.685 ops/s [Average]
+  (min, avg, max) = (5137288.289, 5484466.493, 5945080.854), stdev = 292953.711
+  CI (99.9%): [5265020.808, 5703912.178] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.serializePojoFoo
+
+# Run progress: 75.00% complete, ETA 00:16:42
+# Fork: 1 of 5
+# Warmup Iteration   1: 5195368.680 ops/s
+# Warmup Iteration   2: 5369107.636 ops/s
+# Warmup Iteration   3: 5378385.561 ops/s
+# Warmup Iteration   4: 5355859.782 ops/s
+# Warmup Iteration   5: 5371165.106 ops/s
+Iteration   1: 5376660.357 ops/s
+Iteration   2: 5356358.974 ops/s
+Iteration   3: 5374396.476 ops/s
+Iteration   4: 5382338.182 ops/s
+Iteration   5: 5336283.523 ops/s
+
+# Run progress: 77.50% complete, ETA 00:15:02
+# Fork: 2 of 5
+# Warmup Iteration   1: 5586989.991 ops/s
+# Warmup Iteration   2: 5630157.360 ops/s
+# Warmup Iteration   3: 5636354.379 ops/s
+# Warmup Iteration   4: 5681080.666 ops/s
+# Warmup Iteration   5: 5752445.245 ops/s
+Iteration   1: 5745520.875 ops/s
+Iteration   2: 5739711.168 ops/s
+Iteration   3: 5761470.566 ops/s
+Iteration   4: 5733943.559 ops/s
+Iteration   5: 5744795.839 ops/s
+
+# Run progress: 80.00% complete, ETA 00:13:22
+# Fork: 3 of 5
+# Warmup Iteration   1: 5134991.350 ops/s
+# Warmup Iteration   2: 5255037.892 ops/s
+# Warmup Iteration   3: 5260161.301 ops/s
+# Warmup Iteration   4: 5284221.185 ops/s
+# Warmup Iteration   5: 5258389.245 ops/s
+Iteration   1: 5285555.280 ops/s
+Iteration   2: 5289268.599 ops/s
+Iteration   3: 5259617.461 ops/s
+Iteration   4: 5280679.968 ops/s
+Iteration   5: 5300607.516 ops/s
+
+# Run progress: 82.50% complete, ETA 00:11:41
+# Fork: 4 of 5
+# Warmup Iteration   1: 5590419.871 ops/s
+# Warmup Iteration   2: 5826177.806 ops/s
+# Warmup Iteration   3: 5679012.962 ops/s
+# Warmup Iteration   4: 5540231.684 ops/s
+# Warmup Iteration   5: 5756400.576 ops/s
+Iteration   1: 5779834.721 ops/s
+Iteration   2: 5735305.401 ops/s
+Iteration   3: 5777087.980 ops/s
+Iteration   4: 5766619.594 ops/s
+Iteration   5: 5753266.891 ops/s
+
+# Run progress: 85.00% complete, ETA 00:10:01
+# Fork: 5 of 5
+# Warmup Iteration   1: 5219530.470 ops/s
+# Warmup Iteration   2: 5366392.564 ops/s
+# Warmup Iteration   3: 5365455.418 ops/s
+# Warmup Iteration   4: 5344434.529 ops/s
+# Warmup Iteration   5: 5320456.961 ops/s
+Iteration   1: 5387779.392 ops/s
+Iteration   2: 5389307.600 ops/s
+Iteration   3: 5406403.525 ops/s
+Iteration   4: 5342009.243 ops/s
+Iteration   5: 5365770.950 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.serializePojoFoo":
+  5506823.746 ±(99.9%) 156694.253 ops/s [Average]
+  (min, avg, max) = (5259617.461, 5506823.746, 5779834.721), stdev = 209182.345
+  CI (99.9%): [5350129.492, 5663517.999] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 19, OpenJDK 64-Bit Server VM, 19+36
+# VM invoker: /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.severett.serializationcomparison.kotlin.SerializationComparison.serializeValueClassFoo
+
+# Run progress: 87.50% complete, ETA 00:08:21
+# Fork: 1 of 5
+# Warmup Iteration   1: 5141030.100 ops/s
+# Warmup Iteration   2: 5209761.331 ops/s
+# Warmup Iteration   3: 5261695.402 ops/s
+# Warmup Iteration   4: 5287286.616 ops/s
+# Warmup Iteration   5: 5196611.083 ops/s
+Iteration   1: 5269686.034 ops/s
+Iteration   2: 5268802.676 ops/s
+Iteration   3: 5245833.220 ops/s
+Iteration   4: 5256843.236 ops/s
+Iteration   5: 5279769.380 ops/s
+
+# Run progress: 90.00% complete, ETA 00:06:41
+# Fork: 2 of 5
+# Warmup Iteration   1: 5004089.016 ops/s
+# Warmup Iteration   2: 5202236.051 ops/s
+# Warmup Iteration   3: 5214199.379 ops/s
+# Warmup Iteration   4: 5188194.165 ops/s
+# Warmup Iteration   5: 5203041.011 ops/s
+Iteration   1: 5221759.670 ops/s
+Iteration   2: 5174948.722 ops/s
+Iteration   3: 5213256.733 ops/s
+Iteration   4: 5207050.060 ops/s
+Iteration   5: 5200561.736 ops/s
+
+# Run progress: 92.50% complete, ETA 00:05:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 5019596.528 ops/s
+# Warmup Iteration   2: 5165903.349 ops/s
+# Warmup Iteration   3: 5175810.015 ops/s
+# Warmup Iteration   4: 5194957.975 ops/s
+# Warmup Iteration   5: 5094433.111 ops/s
+Iteration   1: 5066176.678 ops/s
+Iteration   2: 5184765.549 ops/s
+Iteration   3: 5184797.524 ops/s
+Iteration   4: 5158853.437 ops/s
+Iteration   5: 5186305.411 ops/s
+
+# Run progress: 95.00% complete, ETA 00:03:20
+# Fork: 4 of 5
+# Warmup Iteration   1: 5028969.359 ops/s
+# Warmup Iteration   2: 5171727.532 ops/s
+# Warmup Iteration   3: 5192863.077 ops/s
+# Warmup Iteration   4: 5196963.492 ops/s
+# Warmup Iteration   5: 5167814.789 ops/s
+Iteration   1: 5196209.480 ops/s
+Iteration   2: 5200149.028 ops/s
+Iteration   3: 5145124.333 ops/s
+Iteration   4: 5204311.969 ops/s
+Iteration   5: 5200027.319 ops/s
+
+# Run progress: 97.50% complete, ETA 00:01:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 5048575.129 ops/s
+# Warmup Iteration   2: 5273922.477 ops/s
+# Warmup Iteration   3: 5215666.773 ops/s
+# Warmup Iteration   4: 5228529.970 ops/s
+# Warmup Iteration   5: 5235658.178 ops/s
+Iteration   1: 5257140.435 ops/s
+Iteration   2: 5222050.296 ops/s
+Iteration   3: 5259013.901 ops/s
+Iteration   4: 5259205.815 ops/s
+Iteration   5: 5226819.134 ops/s
+
+
+Result "com.severett.serializationcomparison.kotlin.SerializationComparison.serializeValueClassFoo":
+  5211578.471 ±(99.9%) 35537.069 ops/s [Average]
+  (min, avg, max) = (5066176.678, 5211578.471, 5279769.380), stdev = 47440.971
+  CI (99.9%): [5176041.402, 5247115.541] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:06:50
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                            Mode  Cnt        Score        Error  Units
+SerializationComparison.deserializeDefaultValueFoo  thrpt   25  3736582.817 ±  26432.259  ops/s
+SerializationComparison.deserializeImmutableFoo     thrpt   25  3073228.761 ±  34696.279  ops/s
+SerializationComparison.deserializePojoFoo          thrpt   25  3088924.948 ±  31434.449  ops/s
+SerializationComparison.deserializeValueClassFoo    thrpt   25  2931926.095 ±  36850.322  ops/s
+SerializationComparison.serializeDefaultValueFoo    thrpt   25  5418760.874 ± 123412.464  ops/s
+SerializationComparison.serializeImmutableFoo       thrpt   25  5484466.493 ± 219445.685  ops/s
+SerializationComparison.serializePojoFoo            thrpt   25  5506823.746 ± 156694.253  ops/s
+SerializationComparison.serializeValueClassFoo      thrpt   25  5211578.471 ±  35537.069  ops/s
