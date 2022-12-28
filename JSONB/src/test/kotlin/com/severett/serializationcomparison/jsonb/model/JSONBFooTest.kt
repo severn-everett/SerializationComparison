@@ -12,9 +12,7 @@ import java.util.stream.*
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class JSONBFooTest {
-    private val jsonb = JsonbBuilder.create(
-        JsonbConfig().withPropertyOrderStrategy(PropertyOrderStrategy.ANY)
-    )
+    private val jsonb = JsonbBuilder.create()
 
     @ParameterizedTest
     @MethodSource

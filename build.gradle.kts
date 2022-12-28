@@ -1,8 +1,9 @@
+import kotlinx.benchmark.gradle.JvmBenchmarkTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.22"
-    id("org.jetbrains.kotlinx.benchmark") version "0.4.6"
+    kotlin("jvm") version "1.8.0"
+    id("org.jetbrains.kotlinx.benchmark") version "0.4.7"
 }
 
 group = "com.severett"
@@ -27,7 +28,10 @@ subprojects {
 
     benchmark {
         targets {
-            register("main")
+            register("main") {
+                this as JvmBenchmarkTarget
+                jmhVersion = "1.36"
+            }
         }
     }
 
