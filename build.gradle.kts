@@ -1,4 +1,5 @@
 import kotlinx.benchmark.gradle.JvmBenchmarkTarget
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_19
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -19,7 +20,9 @@ subprojects {
 
     tasks {
         withType<KotlinCompile> {
-            kotlinOptions.jvmTarget = "18"
+            compilerOptions {
+                jvmTarget.set(JVM_19)
+            }
         }
         test {
             useJUnitPlatform()
@@ -38,7 +41,7 @@ subprojects {
     dependencies {
         val junitVersion: String by project
 
-        implementation(kotlin("stdlib-jdk8"))
+        implementation(kotlin("stdlib"))
         runtimeOnly("org.jetbrains.kotlinx:kotlinx-benchmark-runtime-jvm:0.4.6")
 
         testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
